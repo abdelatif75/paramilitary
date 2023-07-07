@@ -1,0 +1,29 @@
+{
+  "name": "paramilitary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electronmon .",
+    "err": "electron --trace-warnings",
+    "style": "npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "rehamnia abdelatif",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^14.2.9",
+    "electronmon": "^2.0.2",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
